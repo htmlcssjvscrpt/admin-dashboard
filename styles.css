@@ -4,7 +4,23 @@
     grid-gap: 8px;
 }
 
-.child {
+.left-column {
     background-color: orange;
+    border: 2px solid black;
+}
+
+.right-column {
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.header {
+    background-color: brown;
+    border: 2px solid black;
+}
+
+.content {
+    background-color: lightblue;
     border: 2px solid black;
 }
