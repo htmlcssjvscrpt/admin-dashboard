@@ -12,15 +12,16 @@ html, body {
     grid-template-rows: 1fr;
     grid-gap: 8px;
     height: 100%;
-    width: 70%;
+    width: 100%;
     
 }
 
 .left-column {
     width: 100%;
-    background-color: lightblue;
+    background-color: #1992D4;
     color: white;
     justify-items: center;
+    /* align-items: center; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -48,10 +49,13 @@ html, body {
 }
 
 .heading {
-    font-size: 40px;
-    background-color: grey;
+    font-size: 35px;
+    /* background-color: grey; */
     display: flex;
     width: 100%;
+    padding-left: 25px;
+    margin-top: 20px;
+    align-items: center;
 
 }
 
@@ -60,7 +64,7 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     height: 30%;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 .bottom {
@@ -68,9 +72,16 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
     height: 50%;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
-.middle .child {
+.middle .child, .bottom .child {
     font-size: 30px;
+    /* margin: 10px 0; */
+    padding-left: 25px;
+}
+
+.child img, .heading img {
+    filter: invert(1);
+    margin-right: 10px;
 }
